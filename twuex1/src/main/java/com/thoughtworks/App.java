@@ -5,11 +5,14 @@ public class App
 {
     public static void main( String[] args )
     {
-        TriangleExercises exercises = new TriangleExercises();
+        TriangleExercises triangleExercises = new TriangleExercises();
+        DiamondExercises diamondExercises = new DiamondExercises();
 
-        exercises.printAsterisk();
-        exercises.printHorizontalLine();
-        exercises.printVerticalLine();
-        exercises.printRightTriangle();
+//        triangleExercises.printAsterisk();
+//        triangleExercises.printHorizontalLine();
+//        triangleExercises.printVerticalLine();
+//        triangleExercises.printRightTriangle();
+
+        diamondExercises.printIsoscelesTriangle();
     }
 }
