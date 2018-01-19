@@ -7,6 +7,7 @@ public class App
     {
         TriangleExercises triangleExercises = new TriangleExercises();
         DiamondExercises diamondExercises = new DiamondExercises();
+        FizzBuzzExercises fizzBuzzExercises = new FizzBuzzExercises();
 
 //        triangleExercises.printAsterisk();
 //        triangleExercises.printHorizontalLine();
@@ -15,6 +16,8 @@ public class App
 //
 //        diamondExercises.printIsoscelesTriangle();
 //        diamondExercises.printDiamond();
-        diamondExercises.printDiamondWithName();
+//        diamondExercises.printDiamondWithName();
+
+        fizzBuzzExercises.printFizzBuzz();
     }
 }
