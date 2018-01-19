@@ -12,13 +12,25 @@ public class TriangleExercises {
 
     public void printHorizontalLine (){
 
-            Scanner scan = new Scanner(System.in);
-            System.out.print( " digite um número ");
-            int r = scan.nextInt();
+        Scanner scan = new Scanner(System.in);
+        System.out.print( " digite um número ");
+        int r = scan.nextInt();
 
-            for (int n = r; n > 0; n--){
-                System.out.print( "*" );
-            }
+        for (int n = r; n > 0; n--){
+            System.out.print( "*" );
+        }
+    }
+
+    public void printVerticalLine (){
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print( " digite um número ");
+        int r = scan.nextInt();
+
+        for (int n = r; n > 0; n--){
+            System.out.println( "*" );
+        }
+
     }
 
 }
