@@ -8,16 +8,20 @@ public class App
         TriangleExercises triangleExercises = new TriangleExercises();
         DiamondExercises diamondExercises = new DiamondExercises();
         FizzBuzzExercises fizzBuzzExercises = new FizzBuzzExercises();
+        PrimeFactoreExercises primeFactoreExercises = new PrimeFactoreExercises();
 
-//        triangleExercises.printAsterisk();
-//        triangleExercises.printHorizontalLine();
-//        triangleExercises.printVerticalLine();
-//        triangleExercises.printRightTriangle();
-//
-//        diamondExercises.printIsoscelesTriangle();
-//        diamondExercises.printDiamond();
-//        diamondExercises.printDiamondWithName();
+        triangleExercises.printAsterisk();
+        triangleExercises.printHorizontalLine();
+        triangleExercises.printVerticalLine();
+        triangleExercises.printRightTriangle();
+
+        diamondExercises.printIsoscelesTriangle();
+        diamondExercises.printDiamond();
+        diamondExercises.printDiamondWithName();
 
         fizzBuzzExercises.printFizzBuzz();
+        primeFactoreExercises.printPrimeFactorsExercises();
+
+
     }
 }
