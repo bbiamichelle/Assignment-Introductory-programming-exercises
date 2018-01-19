@@ -14,6 +14,7 @@ public class App
 //        triangleExercises.printRightTriangle();
 //
 //        diamondExercises.printIsoscelesTriangle();
-        diamondExercises.printDiamond();
+//        diamondExercises.printDiamond();
+        diamondExercises.printDiamondWithName();
     }
 }

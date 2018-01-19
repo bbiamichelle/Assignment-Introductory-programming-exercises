@@ -44,6 +44,28 @@ public class DiamondExercises {
         }
     }
 
+    public void printDiamondWithName (){
+
+        int r = 3;
+        int index = 1;
+        int incremento = 1;
+        while(index > 0){
+
+            int q = getQuantidadeDeAst(index);
+            int g = getQuantidadeDeEspacos(r,index);
+            if(index == r){
+                System.out.print("Bill");
+                incremento = -1;
+            } else {
+                imprimiQuantidadeDeCaracter(g," ");
+                imprimiQuantidadeDeCaracter(q,"*");
+            }
+            System.out.println("");
+
+            index += incremento;
+        }
+    }
+
     private static int getQuantidadeDeAst(int n) {
         return 1 + 2 * (n - 1);
     }
