@@ -10,5 +10,6 @@ public class App
         exercises.printAsterisk();
         exercises.printHorizontalLine();
         exercises.printVerticalLine();
+        exercises.printRightTriangle();
     }
 }
