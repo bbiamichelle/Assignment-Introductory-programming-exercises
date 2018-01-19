@@ -22,6 +22,28 @@ public class DiamondExercises {
 
     }
 
+    public void printDiamond () {
+
+        int r = 3;
+        for (int n = 1; n <= r; n++) {
+            int q = getQuantidadeDeAst(n);
+            int g = getQuantidadeDeEspacos(r,n);
+            imprimiQuantidadeDeCaracter(g," ");
+            imprimiQuantidadeDeCaracter(q,"*");
+            System.out.println("");
+
+        }
+
+        for (int m = r - 1 ; m > 0; m--){
+            int a = getQuantidadeDeAst(m);
+            int b = getQuantidadeDeEspacos(r,m);
+            imprimiQuantidadeDeCaracter(b, " ");
+            imprimiQuantidadeDeCaracter(a, "*");
+            System.out.println("");
+
+        }
+    }
+
     private static int getQuantidadeDeAst(int n) {
         return 1 + 2 * (n - 1);
     }
@@ -35,5 +57,5 @@ public class DiamondExercises {
             System.out.print( character);
         }
     }
-    
+
 }
