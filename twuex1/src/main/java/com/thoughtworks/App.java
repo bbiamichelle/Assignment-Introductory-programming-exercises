@@ -1,10 +1,13 @@
-package com.thoughtworks;
+package main.java.com.thoughtworks;
 
 
 public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "*" );
+        TriangleExercises exercises = new TriangleExercises();
+
+        exercises.printAsterisk();
+        exercises.printHorizontalLine();
     }
 }
