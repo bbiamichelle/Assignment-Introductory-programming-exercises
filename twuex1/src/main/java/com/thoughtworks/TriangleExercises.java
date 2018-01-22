@@ -13,10 +13,10 @@ public class TriangleExercises {
     public void printHorizontalLine (){
 
         Scanner scan = new Scanner(System.in);
-        System.out.print( " digite um número ");
-        int r = scan.nextInt();
+        System.out.print( "Enter a number");
+        int answer = scan.nextInt();
 
-        for (int n = r; n > 0; n--){
+        for (int counter = answer; counter > 0; counter--){
             System.out.print( "*" );
         }
     }
@@ -24,40 +24,35 @@ public class TriangleExercises {
     public void printVerticalLine (){
 
         Scanner scan = new Scanner(System.in);
-        System.out.print( " digite um número ");
-        int r = scan.nextInt();
+        System.out.print( "Enter a number");
+        int answer = scan.nextInt();
 
-        for (int n = r; n > 0; n--){
+        for (int counter = answer; counter > 0; counter--){
             System.out.println( "*" );
         }
-
     }
 
     public void printRightTriangle (){
 
-        {
-            Scanner scan = new Scanner(System.in);
-            System.out.print( " digite um número ");
-            int r = scan.nextInt();
+        Scanner scan = new Scanner(System.in);
+        System.out.print( "Enter a number");
+        int answer = scan.nextInt();
 
-            for (int n = 1; n <= r; n++){
-                imprimeUmaQuantidadeDeAst(n);
-                imprimeUmaLinhaEmBranco();
-            }
+        for (int counter = 1; counter <= answer; counter++){
+            printQuantityAsterisk(counter);
+            printABlankLine();
         }
-
     }
 
-    private static void imprimeUmaLinhaEmBranco() {
+    private static void printABlankLine() {
         System.out.println("");
     }
 
-    private static void imprimeUmaQuantidadeDeAst(int n) {
-        for (int x = 0; x < n; x++){
+    private static void printQuantityAsterisk(int quantity) {
+        for (int counter = 0; counter < quantity; counter++){
             System.out.print("*");
         }
     }
-
 }
 
 
