@@ -7,27 +7,27 @@ public class PrimeFactoreExercises {
     public void printPrimeFactorsExercises() {
 
         Scanner scan = new Scanner(System.in);
-        System.out.print(" digite um número ");
-        int n = scan.nextInt();
-        primeFactors(n);
+        System.out.print(" Enter a number");
+        int answer = scan.nextInt();
+        primeFactors(answer);
     }
 
-    private static void primeFactors(int n) {
+    private static void primeFactors(int numberProvided) {
 
-        while (n % 2 == 0) {
+        while (numberProvided % 2 == 0) {
             System.out.print(2 + " ");
-            n /= 2;
+            numberProvided /= 2;
         }
 
-        for (int i = 3; i <= Math.sqrt(n); i += 2) {
-            while (n % i == 0) {
-                System.out.print(i + " ");
-                n /= i;
+        for (int counter = 3; counter <= Math.sqrt(numberProvided); counter += 2) {
+            while (numberProvided % counter == 0) {
+                System.out.print(counter + " ");
+                numberProvided /= counter;
             }
         }
 
-        if (n > 2) {
-            System.out.print(n);
+        if (numberProvided > 2) {
+            System.out.print(numberProvided);
         }
     }
 }
