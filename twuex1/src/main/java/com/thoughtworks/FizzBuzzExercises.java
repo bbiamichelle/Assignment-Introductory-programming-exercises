@@ -4,15 +4,15 @@ public class FizzBuzzExercises {
 
     public void printFizzBuzz (){
 
-        for (int i = 1; i < 101; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
+        for (int counter = 1; counter < 101; counter++) {
+            if (counter % 3 == 0 && counter % 5 == 0) {
                 System.out.println("Fizz");
-            } else if (i % 5 == 0) {
+            } else if (counter % 5 == 0) {
                 System.out.println("Buzz");
-            } else if (i % 3 == 0) {
+            } else if (counter % 3 == 0) {
                 System.out.println("FizzBuzz");
             } else {
-                System.out.println(i);
+                System.out.println(counter);
             }
         }
     }
