@@ -6,11 +6,11 @@ public class FizzBuzzExercises {
 
         for (int counter = 1; counter < 101; counter++) {
             if (counter % 3 == 0 && counter % 5 == 0) {
-                System.out.println("Fizz");
+                System.out.println("FizzBuzz");
             } else if (counter % 5 == 0) {
                 System.out.println("Buzz");
             } else if (counter % 3 == 0) {
-                System.out.println("FizzBuzz");
+                System.out.println("Fizz");
             } else {
                 System.out.println(counter);
             }
